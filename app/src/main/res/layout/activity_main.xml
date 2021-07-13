@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:backgroundTint="?attr/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".IntroActivity"
+    android:paddingBottom="16dp"
+    android:paddingHorizontal="16dp"
+    >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/backgroundColor"
+        android:layout_weight="10">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:background="?attr/backgroundColor"
+        android:id="@+id/dotsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="?attr/backgroundColor"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight=".5"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_intro_prev"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="3"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:padding="8sp"
+            android:text=""
+            android:textColor="?attr/textColor"
+            android:textSize="16sp"
+            android:textFontWeight="500"
+            android:fontFamily="@font/proxima_nova"
+            tools:ignore="ButtonStyle"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sign_in_button"
+                app:icon="@drawable/google_logo"
+                app:iconSize="24sp"
+                app:iconTint="?attr/tintColor"
+                android:layout_marginHorizontal="48dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="?attr/buttonColor"
+                android:textStyle="bold"
+                android:text="@string/sign_in"
+                android:textSize="16sp"
+                app:cornerRadius="16dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textFontWeight="700"
+                android:fontFamily="@font/proxima_nova"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="6"
+                android:textAllCaps="true"
+                />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_intro_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:backgroundTint="?attr/buttonColor"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textFontWeight="700"
+            android:fontFamily="@font/proxima_nova"
+            app:cornerRadius="16dp"
+            android:shadowColor="@color/colorPrimary"
+            tools:ignore="ButtonStyle"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

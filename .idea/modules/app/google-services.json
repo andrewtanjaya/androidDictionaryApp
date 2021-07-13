@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "633150836888",
+    "firebase_url": "https://sowhadzfinal.firebaseio.com",
+    "project_id": "sowhadzfinal",
+    "storage_bucket": "sowhadzfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633150836888:android:352cdf8b516c400c5140ed",
+        "android_client_info": {
+          "package_name": "edu.bluejack20_1.SOwhaDZ"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633150836888-krueeohsrs11q4m2igg9kqb5r0rkfrul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.bluejack20_1.SOwhaDZ",
+            "certificate_hash": "8cb78cad42b3d0406f0f44121081717264ef9dbc"
+          }
+        },
+        {
+          "client_id": "633150836888-lin814vhtlo5frkj69ll016ou34vij07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWSFkx4ZsBSqYIdlTjIO8-eS6aC67bcOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633150836888-lin814vhtlo5frkj69ll016ou34vij07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

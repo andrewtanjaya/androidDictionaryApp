@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentUser"
+    android:background="?attr/backgroundColor"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="32dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="32dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:elevation="24dp"
+                    android:src="@drawable/indonesia"
+                    app:cardCornerRadius="64dp">
+
+                    <ImageView
+                        android:id="@+id/user_profile_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/indonesia" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/user_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24sp"
+                    android:fontFamily="@font/proxima_nova"
+                    android:text="@string/your_name"
+                    android:textColor="?attr/textColor"
+                    android:textFontWeight="700"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/proxima_nova"
+                    android:gravity="center"
+                    android:text="@string/email"
+                    android:textColor="?attr/textColor"
+                    android:textFontWeight="600"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="16dp"
+                app:cornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/user_preferred_language"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/proxima_nova"
+                        android:gravity="left|center_vertical"
+                        android:paddingVertical="16dp"
+                        android:text="@string/choose_preferred_language"
+                        android:textColor="@color/colorWhite"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        app:cornerRadius="16dp"
+                        app:icon="@drawable/ic_round_language_24"
+                        app:iconPadding="32dp" />
+
+                    <Button
+                        android:id="@+id/user_view_history"
+
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/proxima_nova"
+                        android:gravity="left|center_vertical"
+                        android:paddingVertical="16dp"
+                        android:text="@string/view_history"
+                        android:textColor="@color/colorWhite"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        app:cornerRadius="16dp"
+                        app:icon="@drawable/ic_round_history_24"
+                        app:iconPadding="32dp" />
+
+                    <Button
+                        android:id="@+id/user_share_app"
+
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/proxima_nova"
+                        android:gravity="left|center_vertical"
+                        android:paddingVertical="16dp"
+                        android:text="@string/share_app"
+                        android:textColor="@color/colorWhite"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        app:cornerRadius="16dp"
+                        app:icon="@drawable/ic_round_share_24"
+                        app:iconPadding="32dp" />
+
+
+                    <Button
+                        android:id="@+id/user_change_theme"
+
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/proxima_nova"
+                        android:gravity="left|center_vertical"
+                        android:paddingVertical="16dp"
+                        android:text="@string/change_theme"
+                        android:textColor="@color/colorWhite"
+                        android:textFontWeight="700"
+                        android:textSize="14sp"
+                        app:cornerRadius="16dp"
+                        app:icon="@drawable/ic_round_brush_24"
+                        app:iconPadding="32dp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/user_sign_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:fontFamily="@font/proxima_nova"
+                    android:gravity="center"
+                    android:paddingVertical="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/sign_out"
+                    android:textColor="@color/colorPrimary"
+                    android:textFontWeight="700"
+                    android:textSize="14sp"
+                    app:cornerRadius="32dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

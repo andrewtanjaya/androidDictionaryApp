@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SO WHADZ ?!</string>
+    <string name="your_name">Nama</string>
+    <string name="word_of_the_day">Kata Hari Ini</string>
+    <string name="view_history">Tampilkan semua riwayat</string>
+    <string name="user">Pengguna</string>
+    <string name="translation">Terjemahkan</string>
+    <string name="translate_it">Translate It!</string>
+    <string name="translate">Terjemahkan</string>
+    <string name="tap_to_input_text">Tekan untuk masukan text</string>
+    <string name="synonym">Sinonim</string>
+    <string name="submit">Kirim</string>
+    <string name="speech">Suara</string>
+    <string name="sign_out">Keluar</string>
+    <string name="share_app">Bagikan</string>
+    <string name="search_history">Cari Riwayat</string>
+    <string name="profile">Profil</string>
+    <string name="OCR">OCR</string>
+    <string name="mic">Mic</string>
+    <string name="listen">Dengar</string>
+    <string name="home">Halaman Utama</string>
+    <string name="highscore">Skor Tertinggi</string>
+    <string name="hi">Hai,</string>
+    <string name="clear_all">Hapus semua</string>
+    <string name="choose_preferred_language">Pilih Bahasa</string>
+    <string name="antonym">Antonim</string>
+    <string name="word_of_the_day_desc" translatable="false">Menjelahi kata hari ini !</string>
+    <string name="from" translatable="false">Dari</string>
+    <string name="sign_in" translatable="false">Masuk</string>
+    <string name="next" translatable="false">Lanjut</string>
+    <string name="back" translatable="false">Kembali</string>
+    <string name="change_theme" translatable="false">Ganti tema</string>
+    <string name="intro_desc1" translatable="false">Ketiklah dan kamu akan mengerti !</string>
+    <string name="intro_desc2" translatable="false">Ngomong aja, kami terjemahin !</string>
+    <string name="intro_desc3" translatable="false">"Ambliah gambarnya, dan walaaaa Anda mendapatkannya ! "</string>
+    <string name="by" translatable="false">Oleh</string>
+    <string name="detail_transaction" translatable="false">Detail Terjemahan</string>
+    <string name="time" translatable="false">Waktu</string>
+    <string name="language" translatable="false">Bahasa</string>
+    <string name="history" translatable="false">Riwayat</string>
+    <string name="confirm_deletion" translatable="false">Konfirmasi penghapusan</string>
+    <string name="are_you_sure_to_delete" translatable="false">Apakah Anda yakin ingin menhapus</string>
+    <string name="cancel" translatable="false">Batal</string>
+    <string name="confirm" translatable="false">Konfirmasi</string>
+    <string name="email" translatable="false">Alamat surel</string>
+    <string name="time_left" translatable="false">lagi</string>
+    <string name="you_lost" translatable="false">"Kamu kalah "</string>
+    <string name="attempt_left" translatable="false">Kesempatan Lagi</string>
+    <string name="only_title" translatable="false">Judul</string>
+    <string name="history_count" translatable="false">Jumlah riwayat</string>
+    <string name="all_history" translatable="false">semua riwayat</string>
+</resources>

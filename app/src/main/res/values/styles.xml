@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#007fff</item>
+        <item name="colorPrimaryDark">#17224D</item>
+        <item name="colorAccent">#17E9E1</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+    <style name="lightTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#17224D</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#F5FAFA</item>
+        <item name="cardBackgroundColor">#ffffff</item>
+        <item name="textColor">#808080</item>
+        <item name="tintColor">#ffffff</item>
+        <item name="buttonColor">#2196F3</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="darkTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#58A4B0</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="colorAccent">#212121</item>
+        <item name="backgroundColor">#303030</item>
+        <item name="cardBackgroundColor">#424242</item>
+        <item name="textColor">#ffffff</item>
+        <item name="tintColor">#ffffff</item>
+        <item name="buttonColor">#2196F3</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

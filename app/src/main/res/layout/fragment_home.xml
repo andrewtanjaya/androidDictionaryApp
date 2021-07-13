@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentHome"
+    android:orientation="vertical"
+    android:background="?attr/backgroundColor"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="24dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="32dp"
+                android:paddingHorizontal="24dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/home_hi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/proxima_nova"
+                        android:gravity="left"
+                        android:text="@string/hi"
+                        android:textSize="32sp"
+                        android:textColor="?attr/textColor"
+                        android:layout_marginBottom="8sp"
+                        android:textFontWeight="800" />
+
+                    <TextView
+                        android:id="@+id/home_your_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/home_hi"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/proxima_nova"
+                        android:text="@string/your_name"
+                        android:textSize="24sp"
+                        android:textColor="?attr/textColor"
+                        android:textFontWeight="800" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_image_card"
+                    app:cardCornerRadius="32dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sleep_icon">
+
+                    <ImageView
+                        android:id="@+id/home_user_image"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:elevation="30dp"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/word_of_the_day_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:src="@drawable/sleep_icon"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="?attr/colorAccent"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/proxima_nova"
+                            android:text="@string/word_of_the_day"
+                            android:textFontWeight="800"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/word_of_the_day_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/proxima_nova"
+                            android:text="-"
+                            android:textFontWeight="800"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/word_of_the_day_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova"
+                            android:text="-"
+                            android:textColor="?attr/textColor"
+                            android:textFontWeight="600"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/translate_it_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:src="@drawable/sleep_icon"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:background="?attr/colorPrimary"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/proxima_nova"
+                            android:text="@string/translate_it"
+                            android:textFontWeight="800"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/translate_it_highscore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/proxima_nova"
+                            android:text="@string/highscore"
+                            android:textColor="@color/colorTransparentWhite"
+                            android:textFontWeight="600"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/synonym_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="?attr/colorAccent"
+                    android:src="@drawable/sleep_icon"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="20dp"
+                    app:cardBackgroundColor="?attr/colorAccent"
+                    android:background="?attr/colorAccent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="center_vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8sp"
+                                android:fontFamily="@font/proxima_nova"
+                                android:text="S"
+                                android:textFontWeight="800"
+                                android:textColor="@color/colorWhite"
+                                android:layout_marginRight="12dp"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8sp"
+                                android:fontFamily="@font/proxima_nova"
+                                android:text="@string/synonym"
+                                android:textFontWeight="600"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/synonym_card_input"
+                            android:paddingHorizontal="16sp"
+                            android:paddingBottom="8sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tap_to_input_text"
+                            android:fontFamily="@font/proxima_nova"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:background="@android:color/transparent"
+                            android:textFontWeight="800"
+                            />
+
+                        <TextView
+                            android:id="@+id/synonym_card_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova"
+                            android:textColor="?attr/textColor"
+                            android:paddingHorizontal="16dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="14sp"
+                            android:textColorHint="?attr/textColor"
+                            android:text="-"
+                            />
+
+                        <Button
+                            android:id="@+id/synonym_card_submit"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="128dp"
+                            android:layout_height="match_parent"
+                            android:textColor="?attr/colorAccent"
+                            android:text="@string/submit"
+                            android:backgroundTint="@color/colorWhite"
+                            android:fontFamily="@font/proxima_nova"
+                            android:textFontWeight="700"
+                            app:cornerRadius ="24sp"
+                            >
+
+                        </Button>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/antonym_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:src="@drawable/sleep_icon"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="20dp"
+                    app:cardBackgroundColor="?attr/colorPrimary"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp"
+                            android:paddingTop="16dp"
+                            android:gravity="center_vertical"
+                            >
+                            <TextView
+                                android:textColorHint="@color/colorPrimary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8sp"
+                                android:fontFamily="@font/proxima_nova"
+                                android:text="A"
+                                android:textFontWeight="800"
+                                android:textColor="@color/colorWhite"
+                                android:layout_marginRight="12dp"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8sp"
+                                android:fontFamily="@font/proxima_nova"
+                                android:text="@string/antonym"
+                                android:textFontWeight="600"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/antonym_card_input"
+                            android:paddingHorizontal="16sp"
+                            android:paddingBottom="8sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tap_to_input_text"
+                            android:fontFamily="@font/proxima_nova"
+                            android:textColor="@color/colorWhite"
+                            android:textFontWeight="800"
+                            android:background="@android:color/transparent"
+                            />
+
+                        <TextView
+                            android:id="@+id/antonym_card_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova"
+                            android:textColor="@color/colorTransparentWhite"
+                            android:paddingHorizontal="16dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="14sp"
+                            android:text="-"
+                            />
+
+                        <Button
+                            android:id="@+id/antonym_card_submit"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="128dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorWhite"
+                            android:text="@string/submit"
+                            android:backgroundTint="?attr/colorAccent"
+                            android:fontFamily="@font/proxima_nova"
+                            android:textFontWeight="700"
+                            app:cornerRadius ="24sp"
+                            >
+
+                        </Button>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

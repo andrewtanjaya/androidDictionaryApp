@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".OCRActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp">
+
+        <Button
+            android:id="@+id/ocr_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:icon="@drawable/ic_round_arrow_back_ios_24"
+            android:drawableTint="?attr/colorPrimary"
+            app:iconTint="?attr/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/OCR"
+            android:gravity="center"
+            android:layout_marginRight="80dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/proxima_nova"
+            android:textSize="16sp"
+            android:textFontWeight="700"
+            android:textColor="?attr/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/ocr_image"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_ocr_2"
+                    android:layout_marginHorizontal="24dp"
+                    android:scaleType="fitCenter"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    >
+
+                    <Button
+                        android:id="@+id/ocr_camera_button"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:drawableTint="?attr/textColor"
+                        app:icon="@drawable/ic_round_camera_alt_24"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp" />
+
+                    <Button
+                        android:id="@+id/ocr_image_button"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:icon="@drawable/ic_round_image_24"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <EditText
+                        android:id="@+id/ocr_title"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/proxima_nova"
+                        android:hint="@string/tap_to_input_text"
+                        android:padding="16sp"
+                        android:textAllCaps="true"
+                        android:textFontWeight="800"
+                        android:textAlignment="center"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="@color/colorTransparentWhite"
+                        android:textSize="20sp"
+                        />
+
+                    <Button
+                        android:id="@+id/ocr_translate_button"
+                        app:cornerRadius="16dp"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_marginHorizontal="88dp"
+                        android:text="@string/translate"
+                        android:fontFamily="@font/proxima_nova"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:textFontWeight="600"
+                        android:textColor="@color/colorWhite"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
